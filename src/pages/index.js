@@ -1,4 +1,3 @@
-``
 export default function Home () {
   return (
     <main className='max-w-4xl w-[90%] md:w-[95%] mx-auto mt-9 md:mt-20 md:flex md:flex-row-reverse items-center'>
