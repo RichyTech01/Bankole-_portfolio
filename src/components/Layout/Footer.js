@@ -2,14 +2,15 @@ import Link from "next/link";
 const Footer = () => {
     return ( 
         <footer className="ml-5">
+       <hr className="mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
             <ul className="space-y-6 my-5 flex flex-col ">
              <div>
                 <li className="text-xl font-medium">Phone</li>
-                  <li className="text-base opacity-[0.8]">+2349164633296</li>
+                  <li className="text-base font-light">+2349164633296</li>
              </div>
              <div>
                 <li className="text-xl font-medium">Email</li>
-                <li className="text-base opacity-[0.8]">richwaydev01@gmail.com</li>
+                <li className="text-base font-light">richwaydev01@gmail.com</li>
              </div>
             
              <div>

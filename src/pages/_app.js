@@ -6,8 +6,8 @@ export default function App({ Component, pageProps }) {
   return (
     <div className='min-h-screen flex flex-col'>
       <Header/>
-        <Component {...pageProps} />
-       <Footer className="mt-auto"/>
+        <Component {...pageProps} className="flex-grow" />
+       <Footer className="py-4"/>
     </div>
   )
 }
