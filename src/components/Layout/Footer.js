@@ -19,7 +19,7 @@ const Footer = () => {
                 <Link href={'https://wa.me/message/OL3OQBXCDGZIB1'}>
                         <img src="whasap.png" className="h-6 w-6"/>
                     </Link>
-                    <Link href={''}>
+                    <Link href={'https://twitter.com/richy_dev?s=21'}>
                         <img src="twitter.png" className="h-6 w-6"/>
                     </Link>
 

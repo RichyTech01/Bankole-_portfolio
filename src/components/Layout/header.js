@@ -10,7 +10,7 @@ const Header = () => {
         <nav className="flex justify-between sm:py-7 py-5 sm:w-[95%] max-w-4xl mx-auto items-center ">
         <Link href={'/'}>
             <div className="flex items-center space-x-3">
-                    <div className="h-12 w-12 rounded-full bg-yellow-500 flex items-center justify-center font-medium text-xl7">BO</div>
+                    <div className="h-12 w-12 rounded-full bg-gradient-to-r from-amber-500 via-red-500 to-green-500 flex items-center justify-center font-medium text-xl7">BO</div>
                     <h1 className="text-xl font-bold opacity-[1]">Bankole Olashile</h1>
             </div>
             </Link>
@@ -31,7 +31,7 @@ const Header = () => {
                     </Link>
                 </li>
             </ul>
-            <div className="text-3xl md:hidden opacity-[0.9]">&#9776;</div>
+            <div className="text-3xl md:hidden opacity-[0.9] cursor-pointer">&#9776;</div>
         </nav>
         </motion.header>
      );
