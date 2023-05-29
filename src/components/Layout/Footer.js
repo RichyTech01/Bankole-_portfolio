@@ -6,11 +6,11 @@ const Footer = () => {
             <ul className="space-y-6 my-5 flex flex-col ">
              <div>
                 <li className="text-xl font-medium">Phone</li>
-                  <li className="text-base font-light">+2349164633296</li>
+                  <li className="text-base font-extralight">+2349164633296</li>
              </div>
              <div>
                 <li className="text-xl font-medium">Email</li>
-                <li className="text-base font-light">richwaydev01@gmail.com</li>
+                <li className="text-base font-extralight">richwaydev01@gmail.com</li>
              </div>
             
              <div>

@@ -10,8 +10,8 @@ const Header = () => {
         <nav className="flex justify-between sm:py-7 py-5 sm:w-[95%] max-w-4xl mx-auto items-center ">
         <Link href={'/'}>
             <div className="flex items-center space-x-3">
-                    <div className="h-12 w-12 rounded-full bg-gradient-to-r from-amber-500 via-red-500 to-green-500 flex items-center justify-center font-medium text-xl7">BO</div>
-                    <h1 className="text-xl font-bold opacity-[1]">Bankole Olashile</h1>
+                    <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center font-medium text-xl7">BO</div>
+                    <h1 className="text-xl font-semibold opacity-[1]">Bankole Olashile</h1>
             </div>
             </Link>
             <ul className="hidden md:flex flex-row justify-end items-end  gap-16">
@@ -22,7 +22,7 @@ const Header = () => {
                 </li>
                 <li>
                     <Link href={'/'}>
-                        projects
+                        Skills
                     </Link>
                 </li>
                 <li>
