@@ -5,9 +5,15 @@
 
 body{
   background-color: #F3F3F3;
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 .img{
   background-color: #535353;
+}
+.circle-image-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  padding-bottom: 100%;
 }

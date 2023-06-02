@@ -1,13 +1,24 @@
 import Link from "next/link";
 import { motion } from "framer-motion";
+import { useState } from "react";
+import MenuList from "../DropDown/MenuList";
 const Header = () => {
+
+    const [toggle, setToggle] = useState(false)
+    const handleToggle = () => {
+        setToggle(!toggle)
+    }
+    const closeMenu = () => {
+        setToggle(false);
+      };
+
     return ( 
         <motion.header
         initial={{opacity:0, y:-50}}
         animate={{opacity:1, y:0}}
         transition={{duration:0.5, ease:"easeInOut"}}
          className="">
-        <nav className="flex justify-between sm:py-7 py-5 sm:w-[95%] max-w-4xl mx-auto items-center ">
+        <nav className="flex justify-between sm:py-7 py-5 sm:w-[95%] max-w-7xl mx-auto items-center ">
         <Link href={'/'}>
             <div className="flex items-center space-x-3">
                     <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center font-medium text-xl7">BO</div>
@@ -21,18 +32,23 @@ const Header = () => {
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/'}>
-                        Skills
+                    <Link href={'/Resume'}>
+                    Resume 
                     </Link>
                 </li>
                 <li>
-                    <Link href={'/'}>
-                        Resume
+                    <Link href={'/Contact'}>
+                        Contact
                     </Link>
                 </li>
             </ul>
-            <div className="text-3xl md:hidden opacity-[0.9] cursor-pointer">&#9776;</div>
+
+            <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9] cursor-pointer">&#9776;</button>
+            { toggle && 
+            <MenuList closeMenu={closeMenu}/>
+            }
         </nav>
+         
         </motion.header>
      );
 }
