@@ -11,7 +11,7 @@ const ProgressBar = ({skill, percentage }) => {
         ></div>
         <div className=" absolute top-0 left-0 h-full bg-gradient-to-r from-amber-500 via-amber-500 to-transparent w-1/2 animate-slide"></div>
         <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full">
-          <p className="text-base text-gray-700 font-normal sm:hidden">{skill}</p>
+          <p className="text-base text-black font-normal sm:hidden">{skill}</p>
         </div>
       </div>
     );
@@ -51,7 +51,7 @@ const Resume = () => {
                      <h1 className="text-2xl font-medium">Education</h1>
                 <div className="space-y-12 mt-8 sm:mt-0">
                         <div>
-                            <p className="font-extralight">2021 - 2022</p>
+                            <p className="font-extralight">2020 - 2021</p>
                             <p className="font-medium text-[1.1rem]">HTML & CSS3 For Beginners</p>
                             <p className="mt-2 font-extralight sm:max-w-sm">Studied html and css crash course from Bucky Robert Videos</p>
                         </div>
@@ -72,7 +72,7 @@ const Resume = () => {
 
             <article className="mt-6 space-y-7">
           {skills.map(({ skill, percentage }) => (
-            <div className="flex flex-col items-center mb-4" key={skill}>
+            <div className="flex flex-col items-center " key={skill}>
               <div className="max-w-5xl w-full flex justify-between ">
                 <div>
                    <p className="hidden sm:block ">{skill}</p>
