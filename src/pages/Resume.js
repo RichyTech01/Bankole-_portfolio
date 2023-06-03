@@ -4,20 +4,19 @@ const ProgressBar = ({skill, percentage }) => {
     const filledWidth = `${percentage}%`;
   
     return (
-        <div className="relative w-full h-4 bg-gray-200 rounded-full overflow-hidden">
+        <div className="max-w-sm relative w-full h-4 bg-gray-200 rounded-full overflow-hidden">
         <div
-          className="absolute top-0 left-0 h-full bg-amber-500"
+          className="absolute top-0 left-0 h-full bg-amber-500 "
           style={{ width: filledWidth }}
         ></div>
-        <div className="absolute top-0 left-0 h-full bg-gradient-to-r from-amber-500 via-amber-500 to-transparent w-1/2 animate-slide"></div>
+        <div className=" absolute top-0 left-0 h-full bg-gradient-to-r from-amber-500 via-amber-500 to-transparent w-1/2 animate-slide"></div>
         <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full">
-          <p className="text-base text-gray-700 font-normal">{skill}</p>
+          <p className="text-base text-gray-700 font-normal sm:hidden">{skill}</p>
         </div>
       </div>
     );
   };
   
-
 const Resume = () => {
     const skills = [
         { skill: 'Html5', percentage: 93 },
@@ -49,7 +48,7 @@ const Resume = () => {
             </article>
             <hr className="mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
             <article className="sm:flex sm:flex-row sm:justify-between sm:mt-10 mt-7 items-start">
-                     <h1 className="text-3xl font-semibold">Education</h1>
+                     <h1 className="text-2xl font-medium">Education</h1>
                 <div className="space-y-12 mt-8 sm:mt-0">
                         <div>
                             <p className="font-extralight">2021 - 2022</p>
@@ -67,14 +66,17 @@ const Resume = () => {
 
             <hr className="mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
             
-            <div className="mt-7">
+            <div className=" my-10">
 
-            <h2 className="text-3xl font-semibold my-9">Skills <br/>& Expertise</h2>
+            <h2 className="text-2xl font-medium my-9">Skills <br/>& Expertise</h2>
 
             <article className="mt-6 space-y-7">
           {skills.map(({ skill, percentage }) => (
             <div className="flex flex-col items-center mb-4" key={skill}>
-              <div className="max-w-sm w-full flex">
+              <div className="max-w-5xl w-full flex justify-between ">
+                <div>
+                   <p className="hidden sm:block ">{skill}</p>
+              </div>
                 <ProgressBar skill={skill} percentage={percentage} />
               </div>
             </div>

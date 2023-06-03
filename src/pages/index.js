@@ -4,7 +4,7 @@ import Image from "next/image"
 
 export default function Home () {
   return (
-<main className='max-w-[59rem] mx-auto my-10 md:my-36 md:flex md:flex-row-reverse items-center justify-between'>
+<main className='max-w-[59rem] mx-auto my-3 md:my-36 md:flex md:flex-row-reverse items-center justify-between'>
   <motion.article className='md:max-w-[48%] md:w-[46%] max-w-[30rem] w-[95%] mx-auto'>
       <motion.div 
         initial={{opacity:0, y:100}}
@@ -18,25 +18,25 @@ export default function Home () {
       </motion.div>
   
       <div className='flex flex-wrap items-center justify-between my-6 gap-2 overflow-hidden'>
-        <Link href='/Resume'>
+        <Link href='/'>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
             className='flex bg-amber-500 sm:h-[8.2rem] sm:w-[8.2rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.2rem] lg:h-[8.2rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-30  h-[6.5rem] w-[6.5rem]'
           >
-            Resume
+            Home
           </motion.div>
         </Link>
   
-        <Link href='/Skills'>
+        <Link href='/Resume'>
           <motion.div
             initial={{ opacity: 0, y:20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
             className='flex bg-red-500 sm:h-[8.2rem] sm:w-[8.2rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-300  h-[6.5rem] w-[6.5rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.2rem] lg:h-[8.2rem]'
           >
-            Skills
+            Resume
           </motion.div>
         </Link>
   

@@ -18,14 +18,14 @@ const Header = () => {
         animate={{opacity:1, y:0}}
         transition={{duration:0.5, ease:"easeInOut"}}
          className="">
-        <nav className="flex justify-between sm:py-7 py-5 sm:w-[95%] max-w-7xl mx-auto items-center ">
+        <nav className="flex justify-between sm:py-7 py-7 sm:w-[95%] max-w-7xl mx-auto items-center ">
         <Link href={'/'}>
             <div className="flex items-center space-x-3">
                     <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center font-medium text-xl7">BO</div>
                     <h1 className="text-xl font-semibold opacity-[1]">Bankole Olashile</h1>
             </div>
             </Link>
-            <ul className="hidden md:flex flex-row justify-end items-end  gap-16">
+            <ul className="hidden md:flex flex-row justify-end items-end gap-16">
                 <li className="flex items-center space-x-4">
                     <Link href={'/'}>
                         Home
@@ -43,7 +43,7 @@ const Header = () => {
                 </li>
             </ul>
 
-            <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9] cursor-pointer">&#9776;</button>
+            <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9]">&#9776;</button>
             { toggle && 
             <MenuList closeMenu={closeMenu}/>
             }

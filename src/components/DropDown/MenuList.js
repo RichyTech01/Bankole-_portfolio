@@ -14,7 +14,7 @@ const MenuList = ({ closeMenu }) => {
                  className=" md:hidden fixed top-0 left-0 w-screen h-screen bg-white z-50 flex justify-center">
 
                 <li className="flex flex-col items-center justify-center my-auto space-y-16 text-2xl">
-                    <div className="flex justify-end p-">
+                    <div className="flex justify-end ">
                       <button onClick={closeMenu} className="text-5xl"> x</button>
                     </div>
                     <Link onClick={handleLinkClick} href={'/'}>
