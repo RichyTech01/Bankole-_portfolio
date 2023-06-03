@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 const Footer = () => {
     return ( 
         <footer className="sm:w-[95%] max-w-7xl sm:mx-auto">
@@ -17,11 +18,11 @@ const Footer = () => {
                 <li className="text-xl font-medium">Follow me</li>
                 <li className="flex gap-4">
                 <Link href={'https://wa.me/message/OL3OQBXCDGZIB1'}>
-                        <img src="whasap.png" className="h-6 w-6"/>
+                        <Image src="/whasap.png" alt="whatsap" height={24} width={24}/>
                     </Link>
 
                     <Link href={'https://twitter.com/richy_dev?s=21'}>
-                        <img src="twitter.png" className="h-6 w-6"/>
+                        <Image src="/twitter.png" alt="twitter" height={24} width={24}/>
                     </Link>
 
                 </li>

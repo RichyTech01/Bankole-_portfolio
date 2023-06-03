@@ -21,7 +21,7 @@ const Header = () => {
         <nav className="flex justify-between sm:py-7 py-7 sm:w-[95%] max-w-7xl mx-auto items-center ">
         <Link href={'/'}>
             <div className="flex items-center space-x-3">
-                    <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center font-medium text-xl7">BO</div>
+                    <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center font-medium text-xl ">BO</div>
                     <h1 className="text-xl font-semibold opacity-[1]">Bankole Olashile</h1>
             </div>
             </Link>
