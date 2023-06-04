@@ -45,18 +45,23 @@ const Header = () => {
           </ul>
   
           {/* Mobile Menu Button */}
-          <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9]">
-            &#9776;
-          </button>
-  
+          {toggle ? (
+  <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9]">
+    &#10006;
+  </button>
+) : (
+  <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9]">
+    &#9776; {/* hamburger menu icon */}
+  </button>
+)}
           {/* Dropdown Menu */}
           <AnimatePresence>
             {toggle && (
               <motion.div
-                initial={{ opacity: 0, height: 0 }}
-                animate={{ opacity: 1, height: "auto" }}
+                initial={{ opacity: 0, height: 0, y:-100 }}
+                animate={{ opacity: 1, height: "auto",y:0 }}
                 exit={{ opacity: 0, height: 0 }}
-                transition={{ duration: 0.3 }}
+                transition={{ duration: 0.4 }}
                 className="md:hidden absolute right-0 top-16 bg-white p-4 rounded-lg shadow-lg"
               >
                 <MenuList closeMenu={closeMenu} />

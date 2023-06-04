@@ -17,7 +17,7 @@ export default function Home() {
           <p className="font-semibold text-xl sm:text-2xl mt-2 sm:mt-2">
             A Web Developer😉
           </p>
-          <p className="mt-1 text-[17px] leading-7 opacity-[1] font-light">
+          <p className="mt-1 text-[16px] sm:text-[17px] leading-7 opacity-[1] font-light">
             I&#39;m a next.js developer focused on fast and user-friendly web
             applications. Clean code enthusiast with a passion for learning.
             Let&#39;s create exceptional web experiences together.

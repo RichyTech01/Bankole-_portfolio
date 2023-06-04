@@ -51,7 +51,7 @@ const Resume = () => {
                     </div>
                 </div>
             </motion.article>
-            <hr className="mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
+            <hr className=" mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
             <motion.article
                  initial={{opacity:0, y:100}}
                  animate={{opacity:1, y:0}}
@@ -98,7 +98,7 @@ const Resume = () => {
         </motion.div>
         </div>
      );
-     
+
 }
  
 export default Resume;
