@@ -12,7 +12,7 @@ export default function Home () {
         transition={{duration:0.7, ease:'easeInOut'}}
 
       >
-        <h1 className='font-medium text-[2.6rem] sm:text-[4.5rem] sm:font-bold'>Hello</h1>
+        <h1 className='font-medium text-[2.6rem] sm:text-[3.5rem] sm:font-semibold md:font-semibold md:text-[4.5rem]'>Hello</h1>
         <p className='font-semibold text-xl sm:text-2xl mt-2 sm:mt-2 '>A Web Developer😉</p>
         <p className='mt-1 text-[16px] leading-7 opacity-[1] font-light'>I am a next.js developer focused on fast and user-friendly web applications. Clean code enthusiast with a passion for learning. Lets create exceptional web experiences together. </p>
       </motion.div>

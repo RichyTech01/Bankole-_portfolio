@@ -11,7 +11,7 @@ const ProgressBar = ({skill, percentage }) => {
         ></div>
         <div className=" absolute top-0 left-0 h-full bg-gradient-to-r from-amber-500 via-amber-500 to-transparent w-1/2 animate-slide"></div>
         <div className="absolute top-0 left-0 flex items-center justify-center w-full h-full">
-          <p className="text-base text-black font-normal sm:hidden">{skill}</p>
+          <p className="text-base text-black font-light sm:hidden">{skill}</p>
         </div>
       </div>
     );

@@ -13,9 +13,9 @@ const MenuList = ({ closeMenu }) => {
                  transition={{duration:0.2, ease:'easeInOut'}}
                  className=" md:hidden fixed top-0 left-0 w-screen h-screen bg-white z-50 flex justify-center">
 
-                <li className="flex flex-col items-center justify-center my-auto space-y-16 text-2xl">
+                <li className="flex flex-col items-center justify-center my-auto space-y-16 text-xl">
                     <div className="flex justify-end ">
-                      <button onClick={closeMenu} className="text-5xl"> x</button>
+                      <button onClick={closeMenu} className="text-xl"> x</button>
                     </div>
                     <Link onClick={handleLinkClick} href={'/'}>
                         Home

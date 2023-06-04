@@ -1,6 +1,6 @@
 const Contact = () => {
     return ( 
-        <div className="md:my-36 mb-6 md:mb-64 max-w-5xl w-[90%] mx-auto sm:flex justify-between ">
+        <div className="md:my-24 mb-6 md:mb-64 max-w-5xl w-[90%] mx-auto sm:flex justify-between ">
             <article className="space-y-6 flex flex-col mt-8">
                 <div>
                     <h2 className="text-3xl font-semibold mr-[4rem]">Contact</h2>
@@ -8,16 +8,16 @@ const Contact = () => {
                 </div>
 
                 <div className="space-y-2">
-                    <h2 className="text-xl font-semibold">Phone</h2>
+                    <h2 className="text-xl font-normal">Phone</h2>
                     <p className="text-base font-light">+2349164633296</p>
                 </div>
 
                 <div className="space-y-2">
-                    <h2 className="text-xl font-semibold">Email</h2>
+                    <h2 className="text-xl font-normal">Email</h2>
                     <p className="font-light text-base"> richwaydev01@gmail.com</p>
                 </div>
             </article>
-        <form className="space-y-4 md:space-y-0  mt-8 md:flex justify-end items-center flex-wrap md:max-w-[28rem] md:w-[80%] sm:justify-between">
+        <form className="space-y-4 md:space-y-0 md:gap-6 mt-8 md:flex justify-end items-center flex-wrap md:max-w-[28rem] md:w-[80%] sm:justify-between">
                 <div className="flex flex-col"> 
                     <label className="text-base font-light">First Name: </label>
                     <input className="input border border-black mt-2 h-12 max-w-sm  md:w-[13rem]" type="text" required/>
