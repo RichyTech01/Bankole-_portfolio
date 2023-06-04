@@ -73,7 +73,7 @@ export default function Home() {
         <div className="rounded-full overflow-hidden" style={{ width: "100%", height: "100%" }}>
           <div className="circle-image-container">
             <Image
-              src="/myp.png"
+              src="/bk.jpg"
               alt="bankole"
               layout="fill"
               objectFit="cover"
