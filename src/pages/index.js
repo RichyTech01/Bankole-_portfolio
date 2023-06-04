@@ -12,18 +12,18 @@ export default function Home () {
         transition={{duration:0.7, ease:'easeInOut'}}
 
       >
-        <h1 className='font-medium text-[2.6rem] sm:text-[3.5rem] sm:font-semibold md:font-semibold md:text-[4.5rem]'>Hello</h1>
+        <h1 className='font-medium text-[2.6rem] sm:text-[3.5rem] sm:font-semibold md:font-semibold md:text-[6rem] '>Hello</h1>
         <p className='font-semibold text-xl sm:text-2xl mt-2 sm:mt-2 '>A Web Developer😉</p>
-        <p className='mt-1 text-[16px] leading-7 opacity-[1] font-light'>I am a next.js developer focused on fast and user-friendly web applications. Clean code enthusiast with a passion for learning. Lets create exceptional web experiences together. </p>
+        <p className='mt-1 text-[17px] leading-7 opacity-[1] font-light'>I am a next.js developer focused on fast and user-friendly web applications. Clean code enthusiast with a passion for learning. Lets create exceptional web experiences together. </p>
       </motion.div>
   
-      <div className='flex flex-wrap items-center justify-between my-6 gap-2 overflow-hidden'>
+      <div className='flex flex-wrap items-center justify-between my-8 gap-2 overflow-hidden'>
         <Link href='/'>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.2 }}
-            className='flex bg-amber-500 sm:h-[8.2rem] sm:w-[8.2rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.2rem] lg:h-[8.2rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-30  h-[6.5rem] w-[6.5rem]'
+            className='flex bg-amber-500 sm:h-[8.2rem] sm:w-[8.2rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.4rem] lg:h-[8.4rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-30  h-[6.5rem] w-[6.5rem] lg:font-semibold lg:text-2xl text-[21px]'
           >
             Home
           </motion.div>
@@ -34,7 +34,7 @@ export default function Home () {
             initial={{ opacity: 0, y:20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.4 }}
-            className='flex bg-red-500 sm:h-[8.2rem] sm:w-[8.2rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-300  h-[6.5rem] w-[6.5rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.2rem] lg:h-[8.2rem]'
+            className='flex bg-red-500 sm:h-[8.2rem] sm:w-[8.2rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-300  h-[6.5rem] w-[6.5rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.4rem] lg:h-[8.4rem]  lg:font-semibold lg:text-2xl text-[21px]'
           >
             Resume
           </motion.div>
@@ -45,7 +45,7 @@ export default function Home () {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.7, ease: 'easeOut', delay: 0.6 }}
-            className='flex bg-green-500 h-[6.5rem] w-[6.5rem] sm:h-[8.2rem] sm:w-[8.2rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.2rem] lg:h-[8.2rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-300'
+            className='flex bg-green-500 h-[6.5rem] w-[6.5rem] sm:h-[8.2rem] sm:w-[8.2rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.4rem] lg:h-[8.4rem] rounded-full items-center justify-center border border-black hover:bg-slate-50 transition ease-in-out duration-300  lg:font-semibold lg:text-2xl text-[21px]'
           >
             Contact
           </motion.div>

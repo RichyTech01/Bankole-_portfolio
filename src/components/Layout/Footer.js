@@ -2,7 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 const Footer = () => {
     return ( 
-        <footer className="sm:w-[95%] max-w-7xl sm:mx-auto">
+        <footer className="sm:w-[95%] sm:mx-auto">
        <hr className="mt-10 sm:mt-0 bg-black h-[1px] opacity-[0.3] border-none"/>
             <ul className="space-y-6 sm:my-10 my-5 flex flex-col sm:flex-row sm:items-center sm:justify-between">
              <div>

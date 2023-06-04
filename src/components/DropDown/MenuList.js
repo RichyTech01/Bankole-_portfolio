@@ -6,7 +6,11 @@ const MenuList = ({ closeMenu }) => {
       closeMenu();
     };
     return ( 
-        <div>
+        <motion.div
+                 initial={{opacity:0, y:100}}
+                 animate={{opacity:1, y:0}}
+                 transition={{duration:0.2, ease:'easeInOut'}}
+        >
             
              <motion.ul  initial={{opacity:0,}}
                  animate={{opacity:1,}}
@@ -15,7 +19,7 @@ const MenuList = ({ closeMenu }) => {
 
                 <li className="flex flex-col items-center justify-center my-auto space-y-16 text-xl">
                     <div className="flex justify-end ">
-                      <button onClick={closeMenu} className="text-xl"> x</button>
+                      <button onClick={closeMenu} className="text-2xl"> x</button>
                     </div>
                     <Link onClick={handleLinkClick} href={'/'}>
                         Home
@@ -28,7 +32,7 @@ const MenuList = ({ closeMenu }) => {
                     </Link>
                 </li>
             </motion.ul>
-        </div>
+        </motion.div>
      );
 }
  

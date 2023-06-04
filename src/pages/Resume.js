@@ -1,4 +1,5 @@
 import React from "react";
+import { motion } from "framer-motion";
 
 const ProgressBar = ({skill, percentage }) => {
     const filledWidth = `${percentage}%`;
@@ -30,7 +31,11 @@ const Resume = () => {
     return ( 
         <div className="mt-5 sm:w-[95%] max-w-4xl mx-auto">
             <h1 className="text-3xl font-semibold">Resume</h1>
-            <article className="sm:flex sm:flex-row sm:justify-between sm:mt-8">
+            <motion.article 
+              initial={{opacity:0, y:100}}
+              animate={{opacity:1, y:0}}
+              transition={{duration:0.8, ease:'easeInOut'}}
+            className="sm:flex sm:flex-row sm:justify-between sm:mt-8">
                 <h2 className="mt-6 text-2xl font-medium leading-6">Work <br/> Experience</h2>
                 <div className="mt-8 space-y-12 ">
                     <div>
@@ -45,9 +50,13 @@ const Resume = () => {
                         <p className="mt-2 font-extralight sm:max-w-sm">Web designing at Mrbarnk Web Tech, a freelancer.</p>
                     </div>
                 </div>
-            </article>
+            </motion.article>
             <hr className="mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
-            <article className="sm:flex sm:flex-row sm:justify-between sm:mt-10 mt-7 items-start">
+            <motion.article
+                 initial={{opacity:0, y:100}}
+                 animate={{opacity:1, y:0}}
+                 transition={{duration:0.9, ease:'easeInOut'}}
+             className="sm:flex sm:flex-row sm:justify-between sm:mt-10 mt-7 items-start">
                      <h1 className="text-2xl font-medium">Education</h1>
                 <div className="space-y-12 mt-8 sm:mt-0">
                         <div>
@@ -62,11 +71,15 @@ const Resume = () => {
                             <p className="mt-2 font-extralight sm:max-w-sm">Studied core programming from Vishwas at Code Evolution Youtube channel.</p>
                         </div>
                 </div>
-            </article>
+            </motion.article>
 
             <hr className="mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
             
-            <div className=" my-10">
+            <motion.div
+                 initial={{opacity:0, y:100}}
+                 animate={{opacity:1, y:0}}
+                 transition={{duration:1, ease:'easeInOut'}}
+               className=" my-10">
 
             <h2 className="text-2xl font-medium my-9">Skills <br/>& Expertise</h2>
 
@@ -82,7 +95,7 @@ const Resume = () => {
             </div>
           ))}
         </article>
-        </div>
+        </motion.div>
         </div>
      );
 }
