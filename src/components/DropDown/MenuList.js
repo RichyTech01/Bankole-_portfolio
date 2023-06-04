@@ -21,13 +21,13 @@ const MenuList = ({ closeMenu }) => {
                     <div className="flex justify-end ">
                       <button onClick={closeMenu} className="text-2xl"> x</button>
                     </div>
-                    <Link onClick={handleLinkClick} href={'/'}>
+                    <Link className="text-black hover:text-gray-500" onClick={handleLinkClick} href={'/'}>
                         Home
                     </Link>
-                    <Link onClick={handleLinkClick} href={'/Resume'}>
+                    <Link className="text-black hover:text-gray-500" onClick={handleLinkClick} href={'/Resume'}>
                       Resume 
                     </Link>
-                    <Link onClick={handleLinkClick} href={'/Contact'}>
+                    <Link className="text-black hover:text-gray-500" onClick={handleLinkClick} href={'/Contact'}>
                         Contact
                     </Link>
                 </li>

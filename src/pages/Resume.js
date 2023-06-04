@@ -98,6 +98,7 @@ const Resume = () => {
         </motion.div>
         </div>
      );
+     
 }
  
 export default Resume;
