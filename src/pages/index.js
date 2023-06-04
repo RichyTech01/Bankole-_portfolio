@@ -18,9 +18,9 @@ export default function Home() {
             A Web Developer😉
           </p>
           <p className="mt-1 text-[17px] leading-7 opacity-[1] font-light">
-            I am a next.js developer focused on fast and user-friendly web
+            I&#39;m a next.js developer focused on fast and user-friendly web
             applications. Clean code enthusiast with a passion for learning.
-            Let's create exceptional web experiences together.
+            Let&#39;s create exceptional web experiences together.
           </p>
         </motion.div>
 
