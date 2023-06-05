@@ -24,6 +24,7 @@ const Projects = () => {
                      animate={{opacity:1, x:0}}
                      transition={{duration:0.8, ease:'easeInOut'}}
                     >
+                     <Link href={'https://tocal-richwaydev01-gmailcom.vercel.app/'}>
                     <Image 
                        className="sm:max-w-sm"
                        src={'/TocalSite.jpg'}
@@ -31,6 +32,7 @@ const Projects = () => {
                        height={400}
                        alt="tocal site"
                     />
+                    </Link>
                     </motion.div>
                 </div>
 
@@ -48,13 +50,16 @@ const Projects = () => {
                      animate={{opacity:1, x:0}}
                      transition={{duration:0.9, ease:'easeInOut'}}
                     >
+                     <Link href={'https://fricaa.com/'}>
                     <Image 
                        className="sm:max-w-sm"
                        src={'/Fricaa.jpg'}
                        width={400}
                        height={400}
-                       alt="tocal site"
+                       alt="fricaa site"
                     />
+                    </Link>
+
                     </motion.div>
                 </div>
 
@@ -72,13 +77,15 @@ const Projects = () => {
                        animate={{opacity:1, x:0}}
                        transition={{duration:0.9, ease:'easeInOut'}}
                     >
-                    <Image 
-                        className="sm:max-w-sm"
-                       src={'/morizon.jpg'}
-                       width={400}
-                       height={400}
-                       alt="tocal site"
-                    />
+                     <Link href={'https://morizon-payment.vercel.app/'}>
+                           <Image 
+                                 className="sm:max-w-sm"
+                              src={'/morizon.jpg'}
+                              width={400}
+                              height={400}
+                              alt="tocal site"
+                           />
+                    </Link>
                     </motion.div>
                 </div>
 
