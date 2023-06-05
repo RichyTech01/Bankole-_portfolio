@@ -25,7 +25,7 @@ export default function Home() {
         </motion.div>
 
         <div className="flex flex-wrap items-center justify-between my-8 gap-2 overflow-hidden">
-          <Link href="/">
+          <Link href="/Projects">
             <motion.button
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
@@ -33,7 +33,7 @@ export default function Home() {
               whileHover={{ scale: 1.05 }}
               className="flex bg-amber-500 sm:h-[8.2rem] sm:w-[8.2rem] md:h-[6.5rem]  md:w-[6.5rem] lg:w-[8.4rem] lg:h-[8.4rem] rounded-full items-center justify-center border border-gray-300 shadow-md hover:bg-slate-50 transition ease-in-out duration-300 h-[6.5rem] w-[6.5rem] lg:font-semibold lg:text-2xl text-[21px]"
             >
-              Home
+              Projects
             </motion.button>
           </Link>
 

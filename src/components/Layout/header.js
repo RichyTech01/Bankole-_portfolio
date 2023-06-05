@@ -34,7 +34,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <ul className="hidden md:flex flex-row justify-end items-end gap-16">
             <li className="flex items-center space-x-4">
-              <Link className="text-black hover:text-gray-500" href={"/"}>Home</Link>
+              <Link className="text-black hover:text-gray-500" href={"/Projects"}>Projects</Link>
             </li>
             <li>
               <Link className="text-black hover:text-gray-500" href={"/Resume"}>Resume</Link>
@@ -46,11 +46,11 @@ const Header = () => {
   
           {/* Mobile Menu Button */}
           {toggle ? (
-  <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9]">
+  <button onClick={handleToggle} className="text-[2rem] font-light md:hidden opacity-[0.9]">
     &#10006;
   </button>
 ) : (
-  <button onClick={handleToggle} className="text-3xl md:hidden opacity-[0.9]">
+  <button onClick={handleToggle} className="text-[2rem] md:hidden opacity-[0.9]">
     &#9776; {/* hamburger menu icon */}
   </button>
 )}

@@ -29,13 +29,13 @@ const Resume = () => {
       ];
    
     return ( 
-        <div className="mt-5 sm:w-[95%] max-w-4xl mx-auto">
-            <h1 className="text-3xl font-semibold">Resume</h1>
+        <div className="mt-5 sm:w-[95%] max-w-7xl mx-auto">
+            <h1 className=" text-3xl md:text-5xl md:mt-16 font-semibold">Resume</h1>
             <motion.article 
               initial={{opacity:0, y:100}}
               animate={{opacity:1, y:0}}
               transition={{duration:0.8, ease:'easeInOut'}}
-            className="sm:flex sm:flex-row sm:justify-between sm:mt-8">
+            className="sm:flex sm:flex-row sm:justify-between sm:mt-8 md:mt-16">
                 <h2 className="mt-6 text-2xl font-medium leading-6">Work <br/> Experience</h2>
                 <div className="mt-8 space-y-12 ">
                     <div>
@@ -57,7 +57,7 @@ const Resume = () => {
                  animate={{opacity:1, y:0}}
                  transition={{duration:0.9, ease:'easeInOut'}}
              className="sm:flex sm:flex-row sm:justify-between sm:mt-10 mt-7 items-start">
-                     <h1 className="text-2xl font-medium">Education</h1>
+                     <h2 className="text-2xl font-medium">Education</h2>
                 <div className="space-y-12 mt-8 sm:mt-0">
                         <div>
                             <p className="font-extralight">2020 - 2021</p>

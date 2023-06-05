@@ -16,8 +16,8 @@ const MenuList = ({ closeMenu }) => {
                  className=" md:hidden absolute right-0   w-screen h-screen bg-white z-50 flex justify-center">
 
                 <li className="flex flex-col items-center justify-center my-auto space-y-16 text-xl">
-                    <Link className="text-black hover:text-gray-500" onClick={handleLinkClick} href={'/'}>
-                        Home
+                    <Link className="text-black hover:text-gray-500" onClick={handleLinkClick} href={'/Projects'}>
+                    Projects
                     </Link>
                     <Link className="text-black hover:text-gray-500" onClick={handleLinkClick} href={'/Resume'}>
                       Resume 

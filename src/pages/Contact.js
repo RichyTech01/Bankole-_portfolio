@@ -6,7 +6,7 @@ const Contact = () => {
           initial={{opacity:0,y:100 }}
           animate={{opacity:1, y:0}}
           transition={{duration:0.9, ease:'easeInOut'}}
-        className="md:my-24 mb-6 md:mb-64 max-w-5xl w-[95%] mx-auto sm:flex justify-between ">
+        className="md:my-24 mb-6 md:mb-64 max-w-7xl w-[95%] mx-auto sm:flex justify-between ">
             <article className="space-y-6 flex flex-col mt-8">
                 <div>
                     <h2 className="text-3xl font-bold md:text-[2.5rem]">Contact</h2>
