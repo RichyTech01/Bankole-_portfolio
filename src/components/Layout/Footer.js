@@ -6,6 +6,7 @@ const Footer = () => {
         <motion.footer 
         initial={{opacity:0 , y:50}}
         whileInView={{opacity:1, y:0}}
+        viewport={{once:true}}
         transition={{duration:0.7, ease:'easeInOut'}}
         className="sm:w-[95%] sm:mx-auto">
        <hr className="mt-10 sm:mt-0 bg-black h-[1px] opacity-[0.3] border-none"/>

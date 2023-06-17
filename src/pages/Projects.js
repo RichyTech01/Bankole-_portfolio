@@ -15,6 +15,7 @@ const Projects = () => {
                     <motion.div 
                        initial={{opacity: 0, x:-0 }}
                        whileInView={{opacity:1, x:0}}
+                       viewport={{once:true}}
                        transition={{duration:0.8, ease:'easeInOut'}}
                     >
                        <h2 className="text-2xl font-medium mt-6 md:text-3xl md:font-semibold">Project 01</h2>
@@ -23,6 +24,7 @@ const Projects = () => {
                     <motion.div 
                      initial={{opacity: 0, x:10 }}
                      whileInView={{opacity:1, x:0}}
+                     viewport={{once:true}}
                      transition={{duration:0.8, ease:'easeInOut'}}
                     >
                      <Link href={'https://tocal-richwaydev01-gmailcom.vercel.app/'}>
@@ -41,6 +43,7 @@ const Projects = () => {
                     <motion.div 
                        initial={{opacity: 0, x:-10 }}
                        whileInView={{opacity:1, x:0}}
+                       viewport={{once:true}}
                        transition={{duration:0.9, ease:'easeInOut'}}
                     >
                         <h2 className="text-2xl font-medium mt-6 md:text-3xl md:font-semibold">Project 02</h2>
@@ -48,7 +51,8 @@ const Projects = () => {
                     </motion.div>
                     <motion.div
                      initial={{opacity: 0, x:10 }}
-                     whileInView={{opacity:1, x:0}}
+                       viewport={{once:true}}
+                       whileInView={{opacity:1, x:0}}
                      transition={{duration:0.9, ease:'easeInOut'}}
                     >
                      <Link href={'https://fricaa.com/'}>
@@ -67,7 +71,8 @@ const Projects = () => {
                 <div className="sm:flex flex-col space-y-10 gap-5 sm:flex-row sm:justify-between sm:mt-8">
                      <motion.div
                         initial={{opacity: 0, x:-10 }}
-                        whileInView={{opacity:1, x:0}}
+                       viewport={{once:true}}
+                       whileInView={{opacity:1, x:0}}
                         transition={{duration:0.8, ease:'easeInOut'}}
                      >
                        <h2 className="text-2xl font-medium mt-6 md:text-3xl md:font-semibold">Project 03</h2>
@@ -75,6 +80,7 @@ const Projects = () => {
                     </motion.div>
                     <motion.div
                        initial={{opacity: 0, x:10 }}
+                       viewport={{once:true}}
                        whileInView={{opacity:1, x:0}}
                        transition={{duration:0.9, ease:'easeInOut'}}
                     >
