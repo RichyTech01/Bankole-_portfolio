@@ -3,6 +3,7 @@ import Link from "next/link";
 import Image from "next/image";
 
 export default function Home() {
+
   return (
     <main className="max-w-[59rem] mx-auto my-3 md:my-36 md:flex md:flex-row-reverse items-center justify-between">
       <motion.article className="md:max-w-[48%] md:w-[46%] max-w-[30rem] w-[95%] mx-auto">

@@ -29,23 +29,25 @@ const Resume = () => {
       ];
    
     return ( 
-        <div className="mt-5 sm:w-[95%] max-w-7xl mx-auto">
+        <motion.div 
+       
+        className="mt-5 sm:w-[95%] max-w-7xl mx-auto">
             <h1 className=" text-3xl md:text-5xl md:mt-16 font-semibold">Resume</h1>
             <motion.article 
               initial={{opacity:0, y:100}}
-              animate={{opacity:1, y:0}}
+              whileInView={{opacity:1, y:0}}
               transition={{duration:0.8, ease:'easeInOut'}}
             className="sm:flex sm:flex-row sm:justify-between sm:mt-8 md:mt-16">
                 <h2 className="mt-6 text-2xl font-medium leading-6">Work <br/> Experience</h2>
                 <div className="mt-8 space-y-12 ">
                     <div>
-                        <p className="font-extralight">2023 - Present </p>
+                        <p className="font-extralight">2022 - Present </p>
                         <p className="font-medium text-[1.1rem]">Frontend/Software developer</p>
                         <p className="mt-2 font-extralight sm:max-w-sm">Frontend/Sofware developer at Betacodings Software Company.</p>
                     </div>
 
                     <div>
-                        <p className="font-extralight">2023 - Present </p>
+                        <p className="font-extralight">2022 - Present </p>
                         <p className="font-medium text-[1.1rem]">Web Designer</p>
                         <p className="mt-2 font-extralight sm:max-w-sm">Web designing at Mrbarnk Web Tech, a freelancer.</p>
                     </div>
@@ -54,7 +56,7 @@ const Resume = () => {
             <hr className=" mt-10 bg-black h-[1px] opacity-[0.3] border-none"/>
             <motion.article
                  initial={{opacity:0, y:100}}
-                 animate={{opacity:1, y:0}}
+                 whileInView={{opacity:1, y:0}}
                  transition={{duration:0.9, ease:'easeInOut'}}
              className="sm:flex sm:flex-row sm:justify-between sm:mt-10 mt-7 items-start">
                      <h2 className="text-2xl font-medium">Education</h2>
@@ -77,7 +79,7 @@ const Resume = () => {
             
             <motion.div
                  initial={{opacity:0, y:100}}
-                 animate={{opacity:1, y:0}}
+                 whileInView={{opacity:1, y:0}}
                  transition={{duration:1, ease:'easeInOut'}}
                className=" my-10">
 
@@ -96,7 +98,7 @@ const Resume = () => {
           ))}
         </article>
         </motion.div>
-        </div>
+        </motion.div>
      );
 
 }

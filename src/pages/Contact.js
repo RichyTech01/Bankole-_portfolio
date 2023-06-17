@@ -47,7 +47,7 @@ const Contact = () => {
                     <textarea className="input border-black mt-2 h-32 border max-w-sm md:w-[18rem]" type="text" required/>
                 </div>
                 <div className="rounded-full ">
-                    <button className="w-28 h-28 md:mt-7 sm:w-[8.5rem] sm:h-[8.5rem] border-black border text-[17px] bg-amber-500 rounded-full md:text-[1.3rem] font-medium  hover:bg-slate-50 transition ease-in-out duration-300">Submit</button>
+                    <button className="border border-gray-300 shadow-md w-28 h-28 md:mt-7 sm:w-[8.5rem] sm:h-[8.5rem] text-[17px] bg-amber-500 rounded-full md:text-[1.3rem] font-medium  hover:bg-slate-50 transition ease-in-out duration-300">Submit</button>
                 </div>
             </form>
         </motion.div>

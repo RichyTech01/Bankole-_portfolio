@@ -9,6 +9,7 @@ body{
   background-color: #F3F3F3;
   width: 95%;
   margin: auto;
+  overflow-x: hidden;
 }
 .img{
   background-color: #535353;

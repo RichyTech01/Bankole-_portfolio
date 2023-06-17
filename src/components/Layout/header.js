@@ -16,7 +16,7 @@ const Header = () => {
     return (
       <motion.header
         initial={{ opacity: 0, y: -50 }}
-        animate={{ opacity: 1, y: 0 }}
+        whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, ease: "easeInOut" }}
         className=""
       >
@@ -24,7 +24,7 @@ const Header = () => {
           {/* Logo and Name */}
           <Link href={"/"}>
             <div className="flex items-center space-x-3">
-              <div className="h-10 w-10 rounded-full bg-amber-500 flex items-center justify-center font-medium text-xl">
+              <div className="h-10 w-10 rounded-full border border-gray-300 shadow-md bg-amber-500 flex items-center justify-center font-medium text-xl">
                 BO
               </div>
               <h1 className="text-xl font-semibold opacity-[1]">Bankole Olashile</h1>
