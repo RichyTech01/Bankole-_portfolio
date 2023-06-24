@@ -37,6 +37,7 @@ const Resume = () => {
               initial={{opacity:0, y:100}}
               whileInView={{opacity:1, y:0}}
               transition={{duration:0.8, ease:'easeInOut'}}
+              viewport={{once:true}}
             className="sm:flex sm:flex-row sm:justify-between sm:mt-8 md:mt-16">
                 <h2 className="mt-6 text-2xl font-medium leading-6">Work <br/> Experience</h2>
                 <div className="mt-8 space-y-12 ">
@@ -81,6 +82,7 @@ const Resume = () => {
                  initial={{opacity:0, y:100}}
                  whileInView={{opacity:1, y:0}}
                  transition={{duration:1, ease:'easeInOut'}}
+                 viewport={{once:true}}
                className=" my-10">
 
             <h2 className="text-2xl font-medium my-9">Skills <br/>& Expertise</h2>

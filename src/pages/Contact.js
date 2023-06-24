@@ -1,6 +1,11 @@
 import { motion } from "framer-motion";
 
 const Contact = () => {
+
+    const onSubmit = () => {
+        alert('Sumitted')
+    }
+
     return ( 
         <motion.div 
           initial={{opacity:0,y:100 }}
@@ -23,7 +28,7 @@ const Contact = () => {
                     <p className="font-light text-base"> richwaydev01@gmail.com</p>
                 </div>
             </article>
-        <form className="space-y-4 md:space-y-0 md:gap-6 mt-10 md:flex justify-end items-center flex-wrap md:max-w-[28rem] md:w-[80%] sm:justify-between">
+        <form onSubmit={onSubmit} className="space-y-4 md:space-y-0 md:gap-6 mt-10 md:flex justify-end items-center flex-wrap md:max-w-[28rem] md:w-[80%] sm:justify-between">
                 <div className="flex flex-col"> 
                     <label className="text-[15px] font-normal">First Name </label>
                     <input className="input border border-black mt-2 h-12 max-w-sm  md:w-[13.2rem] " type="text" required/>
@@ -47,7 +52,7 @@ const Contact = () => {
                     <textarea className="input border-black mt-2 h-32 border max-w-sm md:w-[18rem]" type="text" required/>
                 </div>
                 <div className="rounded-full ">
-                    <button className="border border-gray-300 shadow-md w-28 h-28 md:mt-7 sm:w-[8.5rem] sm:h-[8.5rem] text-[17px] bg-amber-500 rounded-full md:text-[1.3rem] font-medium  hover:bg-slate-50 transition ease-in-out duration-300">Submit</button>
+                    <button onSubmit={onSubmit} className="border border-gray-300 shadow-md w-28 h-28 md:mt-7 sm:w-[8.5rem] sm:h-[8.5rem] text-[17px] bg-amber-500 rounded-full md:text-[1.3rem] font-medium  hover:bg-slate-50 transition ease-in-out duration-300">Submit</button>
                 </div>
             </form>
         </motion.div>
