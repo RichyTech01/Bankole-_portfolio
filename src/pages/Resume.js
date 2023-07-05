@@ -20,19 +20,20 @@ const ProgressBar = ({skill, percentage }) => {
   
 const Resume = () => {
     const skills = [
-        { skill: 'Html5', percentage: 93 },
-        { skill: 'Css3', percentage: 90 },
-        { skill: 'JavaScript', percentage:  65},
-        { skill: 'React.js', percentage: 85 },
-        { skill: 'Next.js', percentage: 80 },
-        { skill: 'Tailwind css', percentage: 84 },
+        { skill: 'Html5'  },
+        { skill: 'Css3'  },
+        { skill: 'JavaScript' },
+        { skill: 'React.js'  },
+        { skill: 'Next.js'  },
+        { skill: 'Tailwind css'  },
       ];
    
     return ( 
         <motion.div 
-       
         className="mt-5 sm:w-[95%] max-w-7xl mx-auto">
-            <h1 className=" text-3xl md:text-5xl md:mt-16 font-semibold">Resume</h1>
+            <h1 className=" text-3xl md:text-5xl md:mt-16 font-semibold">
+              Resume
+            </h1>
             <motion.article 
               initial={{opacity:0, y:100}}
               whileInView={{opacity:1, y:0}}
@@ -59,7 +60,7 @@ const Resume = () => {
                  initial={{opacity:0, y:100}}
                  whileInView={{opacity:1, y:0}}
                  transition={{duration:0.9, ease:'easeInOut'}}
-             className="sm:flex sm:flex-row sm:justify-between sm:mt-10 mt-7 items-start">
+                 className="sm:flex sm:flex-row sm:justify-between sm:mt-10 mt-7 items-start">
                      <h2 className="text-2xl font-medium">Education</h2>
                 <div className="space-y-12 mt-8 sm:mt-0">
                         <div>
@@ -83,18 +84,17 @@ const Resume = () => {
                  whileInView={{opacity:1, y:0}}
                  transition={{duration:1, ease:'easeInOut'}}
                  viewport={{once:true}}
-               className=" my-10">
+               className=" my-10 sm:flex sm:justify-between  ">
 
-            <h2 className="text-2xl font-medium my-9">Skills <br/>& Expertise</h2>
+            <h2 className="text-2xl font-medium ">Skills <br/>& Expertise</h2>
 
-            <article className="mt-6 space-y-7">
-          {skills.map(({ skill, percentage }) => (
-            <div className="flex flex-col items-center " key={skill}>
-              <div className="max-w-5xl w-full flex justify-between ">
+            <article className="mt-6 space-y-5 grid grid-cols-2 ">
+          {skills.map(({ skill }) => (
+            <div className="grid grid-cols-2 items-center " key={skill}>
+              <div className="max-w-5xl w-full flex ">
                 <div>
-                   <p className="hidden sm:block ">{skill}</p>
+                   <p className="">{skill}</p>
               </div>
-                <ProgressBar skill={skill} percentage={percentage} />
               </div>
             </div>
           ))}

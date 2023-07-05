@@ -55,7 +55,7 @@ const Projects = () => {
                        whileInView={{opacity:1, x:0}}
                      transition={{duration:0.9, ease:'easeInOut'}}
                     >
-                     <Link href={'https://fricaa.com/'}>
+                     <Link href={''}>
                     <Image 
                        className="sm:max-w-sm"
                        src={'/Fricaa.jpg'}

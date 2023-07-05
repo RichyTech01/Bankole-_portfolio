@@ -10,7 +10,7 @@ const Header = () => {
     };
   
     const closeMenu = () => {
-      setToggle(false);
+      // setToggle(false);
     };
   
     return (
@@ -47,7 +47,7 @@ const Header = () => {
   
           {/* Mobile Menu Button */}
           {toggle ? (
-  <button onClick={handleToggle} className="text-[2rem] font-light md:hidden opacity-[0.9]">
+  <button onClick={handleToggle} className="text-[1.7rem] font-extralight md:hidden opacity-[0.9]">
     &#10006;
   </button>
 ) : (
@@ -56,18 +56,20 @@ const Header = () => {
   </button>
 )}
           {/* Dropdown Menu */}
+          
           <AnimatePresence>
             {toggle && (
               <motion.div
                 initial={{ opacity: 0, height: 0, y:-100 }}
                 animate={{ opacity: 1, height: "auto",y:0 }}
-                exit={{ opacity: 0, height: 0 }}
+                exit={{ opacity: 0, height: 0,y:100 }}
                 transition={{ duration: 0.4 }}
                 className="md:hidden absolute right-0 top-16 bg-white p-4 rounded-lg shadow-lg"
               >
-                <MenuList closeMenu={closeMenu} />
+                <MenuList/>
               </motion.div>
             )}
+             
           </AnimatePresence>
         </nav>
       </motion.header>
